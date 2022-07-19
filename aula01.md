@@ -56,7 +56,7 @@ Acesso ao console: https://console.aws.amazon.com/console/
 
 Digira "EC2" na barra de busca:
 
-![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/main/a01pt05img1.png?raw=true)
+![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/main/a01pt05img1.PNG?raw=true)
 
 Vamos criar a instância EC2 no dashboard. 
 Ele é importante para você ter uma fotografia do que está acontecendo.
@@ -68,11 +68,11 @@ Cada região tem um dashboard próprio e uma precificação diferente.
 
 Para criar a instancia clique em "Running Instances".
 
-![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/main/a01pt05img2.png?raw=true)
+![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/main/a01pt05img2.PNG?raw=true)
 
 Na páginina das Instances, clique em Launch Instance.
 
-![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/main/a01pt05img3.png?raw=true)
+![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/main/a01pt05img3.PNG?raw=true)
 
 Ele pede para eu selecionar qual o tipo de máquina eu quero utilizar. 
 Ele tem desde as máquinas Linux, que é o default, tem máquina Windows também. 
@@ -88,9 +88,9 @@ Já tem umas ferramentas, umas integrações que vão ajudar bastante no futuro.
 
 Nosso padrão: Amazon Linux EC2 t2.micro. 
 
-![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/main/a01pt05img4.png?raw=true)
+![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/main/a01pt05img4.PNG?raw=true)
 
-![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/main/a01pt05img5.png?raw=true)
+![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/main/a01pt05img5.PNG?raw=true)
 
 
 Nosso default aqui. Avançar. Número de instâncias a ser criado, uma. Aqui, eu vou passar direto e depois nós voltamos. Nessa tela aqui, eu vou simplesmente avançar, não vou fazer nenhuma modificação. 
