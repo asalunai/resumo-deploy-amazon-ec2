@@ -74,8 +74,24 @@ Na páginina das Instances, clique em Launch Instance.
 
 ![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/a01pt05img3.PNG?raw=true)
 
-Ele pede para eu selecionar qual o tipo de máquina eu quero utilizar. 
-Ele tem desde as máquinas Linux, que é o default, tem máquina Windows também. 
+O processo de criação de instancia possui 7 passos:
+
+  1. Choose AMI
+  2. Choose Instance Type
+  3. Configure Instance 
+  4. Add Storage 
+  5. Add Tags 
+  6. Configure Security Group
+  7. Review
+
+![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/a01pt05img4.PNG?raw=true)
+
+Vamos por cada um deles:
+
+### Choose AMI
+
+Ele pede para eu selecionar qual a imagem de máquina eu quero utilizar. 
+Ele tem as máquinas Linux, que é o default, e tem máquina Windows também. 
 
 :pushpin: Atente para o label: Free Tier.
 
@@ -83,27 +99,43 @@ Se você tem uma aplicação específica, por exemplo, a minha app é recomendad
 Você aciona aqui uma imagem do fabricante, o que foi homologado. 
 
 Se não houver nenhuma especificação, recomenda-se usar o Amazon Linux. 
-É um Red Hat compilado para a Amazon. 
-Já tem umas ferramentas, umas integrações que vão ajudar bastante no futuro.
+
+### Choose Instance Type
 
 Nosso padrão: Amazon Linux EC2 t2.micro. 
 
-![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/a01pt05img4.PNG?raw=true)
+:pushpin: Atente para o label: Free Tier.
 
-![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/a01pt05img5.PNG?raw=true)
+### Configure Instance 
 
+Por enquanto, deixa o padrão que já está na tela. Não é necessario fazer nenhuma modificação.
 
-Nosso default aqui. Avançar. Número de instâncias a ser criado, uma. Aqui, eu vou passar direto e depois nós voltamos. Nessa tela aqui, eu vou simplesmente avançar, não vou fazer nenhuma modificação. 
+### Add storage. 
 
-Adicionar storage. Existe a máquina virtual, questão de processamento, memória e tudo mais. Quem vai processar. E existe o disco. São serviços separados, a cobrança disso é separado. Você tem uma máquina virtual e tem o disco dessa máquina.
+Você tem uma máquina virtual e tem o disco dessa máquina. São serviços separados, a cobrança disso é separado. 
 
-[06:44] Vou usar aqui o default também, está dentro do Free Tier.
+Deixa o padrão também, está dentro do Free Tier.
 
-Aqui é muito importante. O que é o Security Group? No Security Group, a máquina está dentro da AWS. Como é que eu, daqui do escritório, da empresa, de casa, como é que eu acesso é essa máquina? Eu tenho que chegar dentro da infraestrutura da AWS.
+:pushpin: Atente para o label: Free Tier.
 
-[07:22] Tem um mecanismo de faro, de proteção. O Security Group é como, generalizando, como se fosse o Firewall que você configura. Para que eu possa chegar lá, eu preciso de acesso SSH. Sim, todas as máquinas Linux são gerenciadas via SSH. SSH na porta 22. Ele vai criar um grupo novo para mim, e eu vou dar o nome aqui de “acesso-remoto”. Eu preferi esse nome aqui. “Acesso-remoto” é a descrição. SSH, porta 22. Quem pode fazer acesso a esse SSH? 000, todo mundo. Talvez isso aqui não seja interessante.
+### Configure Security Group
 
-[08:10] Olha só, que legal. Você clica aqui: My IP. Ele colocou o meu IP de saída aqui. No momento, eu estou com esse IP de saída. Só esse IP pode fazer SSH. Se o teu IP for dinâmico, isso daqui a pouco vai parar de funcionar e você vai ter que ajustar a regra. Fica ligado aqui. Você pode definir ranges de rede, por exemplo, enfim. Vou botar aqui My IP só para nós lançarmos a máquina. Review e Launch. Ele dá um resumo do que nós criamos. Lançar máquina.
+:warning: *Aqui é muito importante*. 
+
+No Security Group, a máquina está dentro da AWS.
+Como é que eu, daqui do escritório, da empresa, de casa, acesso essa máquina? 
+Eu tenho que chegar dentro da infraestrutura da AWS.
+
+O Security Group é como se fosse o Firewall que você configura. 
+Para que eu possa chegar lá, eu preciso de acesso SSH na porta 22.
+Ele vai criar um grupo novo para mim, e eu vou dar o nome aqui de “acesso-remoto”. 
+
+Você clica aqui: My IP. 
+Ele colocou o meu IP de saída aqui. No momento, eu estou com esse IP de saída. Só esse IP pode fazer SSH. 
+Se o teu IP for dinâmico, isso daqui a pouco vai parar de funcionar e você vai ter que ajustar a regra. 
+Fica ligado aqui. Você pode definir ranges de rede, por exemplo, enfim. Vou botar aqui My IP só para nós lançarmos a máquina. 
+
+Review e Launch. Ele dá um resumo do que nós criamos. Lançar máquina.
 
 [09:10] “E daí, Ricardo?” Eu já tenho uma chave criada, mas eu vou criar uma nova. Se você não tiver nenhuma, vai ser forçado a criar. Você precisa definir um nome para essa chave. Eu vou botar “aws-ricardo”. Download. Ponto importante aqui, se você perder essa chave, o que vai acontecer? Você não vai ter mais acesso à sua máquina virtual. Não vai ter acesso. Tem que guardar exatamente essa chave aqui, não pode esquecer disso.
 
