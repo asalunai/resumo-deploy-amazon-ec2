@@ -127,16 +127,31 @@ Como é que eu, daqui do escritório, da empresa, de casa, acesso essa máquina?
 Eu tenho que chegar dentro da infraestrutura da AWS.
 
 O Security Group é como se fosse o Firewall que você configura. 
-Para que eu possa chegar lá, eu preciso de acesso SSH na porta 22.
-Ele vai criar um grupo novo para mim, e eu vou dar o nome aqui de “acesso-remoto”. 
 
-Você clica aqui: My IP. 
+Para que eu possa chegar lá, 
+
+* eu preciso de acesso SSH na porta 22.
+* Ele vai criar um grupo novo para mim, e eu vou dar o nome aqui de “acesso-remoto”. 
+* Você clica aqui: My IP.
+
 Ele colocou o meu IP de saída aqui. No momento, eu estou com esse IP de saída. Só esse IP pode fazer SSH. 
 Se o teu IP for dinâmico, isso daqui a pouco vai parar de funcionar e você vai ter que ajustar a regra. 
-Fica ligado aqui. Você pode definir ranges de rede, por exemplo, enfim. Vou botar aqui My IP só para nós lançarmos a máquina. 
 
-Review e Launch. Ele dá um resumo do que nós criamos. Lançar máquina.
+Você pode definir ranges de rede, por exemplo.
 
-[09:10] “E daí, Ricardo?” Eu já tenho uma chave criada, mas eu vou criar uma nova. Se você não tiver nenhuma, vai ser forçado a criar. Você precisa definir um nome para essa chave. Eu vou botar “aws-ricardo”. Download. Ponto importante aqui, se você perder essa chave, o que vai acontecer? Você não vai ter mais acesso à sua máquina virtual. Não vai ter acesso. Tem que guardar exatamente essa chave aqui, não pode esquecer disso.
+![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/a01pt05img7.PNG?raw=true)
 
-[09:47] Com a chave criada, eu vou lançar a instância. O que ele está fazendo? Está provisionando a instância. Está botando aquela máquina Linux com aquelas configurações no ar. Como é que nós vamos ver isso, como é que nós vamos acessar, como é que eu consigo mexer na máquina? Na sequência, eu te mostro.
+### Review
+
+Ele dá um resumo do que nós criamos. Agora é só lançar máquina.
+
+### Observações Finais
+
+Quando a instancia é criada, ela pede para definir uma chave SSH.
+
+Se você não tiver nenhuma, vai ser forçado a criar. Você precisa definir um nome para essa chave. Download.
+
+![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/a01pt05img8.PNG?raw=true)
+
+:warning: Se você perder essa chave, você não vai ter mais acesso à sua máquina virtual. Tem que guardar exatamente essa chave aqui, não pode esquecer disso.
+
