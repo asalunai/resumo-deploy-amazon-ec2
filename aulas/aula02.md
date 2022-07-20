@@ -17,7 +17,7 @@ Tem algumas coisas importantes:
 * Aonde ela está provisionada? us-east1-1d.
 * O IP de acesso, o IP público de acesso.
 
-![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/a02pt01img1.PNG?raw=true)
+![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/imagens/a02pt01img1.PNG?raw=true)
 
 📌 Ver mais sobre regiões e zonas da AWS: https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/
 
@@ -26,7 +26,7 @@ Se você clicar com o botão direito => state da instância, você pode Parar ou
 	* Terminar: você destrói a máquina, ou seja, você vai excluir a máquina. 
 	* Parar: simplesmente para a maquina. 
 	
-![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/a02pt01img2.PNG?raw=true)
+![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/imagens/a02pt01img2.PNG?raw=true)
 
 ### Acesso Remoto
 

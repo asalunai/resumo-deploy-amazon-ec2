@@ -56,7 +56,7 @@ Acesso ao console: https://console.aws.amazon.com/console/
 
 Digira "EC2" na barra de busca:
 
-![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/a01pt05img1.PNG?raw=true)
+![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/imagens/a01pt05img1.PNG?raw=true)
 
 Vamos criar a instância EC2 no dashboard. 
 Ele é importante para você ter uma fotografia do que está acontecendo.
@@ -68,11 +68,11 @@ Cada região tem um dashboard próprio e uma precificação diferente.
 
 Para criar a instancia clique em "Running Instances".
 
-![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/a01pt05img2.PNG?raw=true)
+![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/imagens/a01pt05img2.PNG?raw=true)
 
 Na páginina das Instances, clique em Launch Instance.
 
-![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/a01pt05img3.PNG?raw=true)
+![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/imagens/a01pt05img3.PNG?raw=true)
 
 O processo de criação de instancia possui 7 passos:
 
@@ -84,7 +84,7 @@ O processo de criação de instancia possui 7 passos:
   6. Configure Security Group
   7. Review
 
-![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/a01pt05img4.PNG?raw=true)
+![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/imagens/a01pt05img4.PNG?raw=true)
 
 Vamos por cada um deles:
 
@@ -139,7 +139,7 @@ Se o teu IP for dinâmico, isso daqui a pouco vai parar de funcionar e você vai
 
 Você pode definir ranges de rede, por exemplo.
 
-![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/a01pt05img7.PNG?raw=true)
+![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/imagens/a01pt05img7.PNG?raw=true)
 
 ### Review
 
@@ -151,7 +151,7 @@ Quando a instancia é criada, ela pede para definir uma chave SSH.
 
 Se você não tiver nenhuma, vai ser forçado a criar. Você precisa definir um nome para essa chave. Download.
 
-![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/a01pt05img8.PNG?raw=true)
+![alt text](https://github.com/asalunai/alura-deploy-amazon-ec2/blob/main/imagens/a01pt05img8.PNG?raw=true)
 
 :warning: Se você perder essa chave, você não vai ter mais acesso à sua máquina virtual. Tem que guardar exatamente essa chave aqui, não pode esquecer disso.
 
