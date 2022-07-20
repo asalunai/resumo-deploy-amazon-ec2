@@ -1,2 +1,2 @@
-# alura-deploy-amazon-ec2
-Curso Alura - Deploy no Amazon EC2
+# resumo-deploy-amazon-ec2
+Curso - Deploy no Amazon EC2
