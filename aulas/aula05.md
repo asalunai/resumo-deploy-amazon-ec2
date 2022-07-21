@@ -37,7 +37,7 @@ Conectando no BD:
 * No menu lateral, volte em "Instâncias"
 * Na máquina web-dev criada anteriormente, vá em "Secutity Group" e habilite a conexão VPC
 * No termial Linux, conecte na maquina web-dev. ⚠️ Na linha de comando que a AWS gera automaticamente, o acesso estará em nome do usuário "root". Isso acontece porque a instancia foi gerada através de um template. Substitua "root" pelo "ec2-user" para evitar erros.
-* Utilize o comando  “mysql –u admin –h <endpoint> -p” para conectar no BD utilizando a senha do banco. 
+* Utilize o comando  “mysql –u admin –h endpoint -p” para conectar no BD utilizando a senha do banco. 
 
 Vamos criar uma tabela para testes. É uma aplicação simples de inserção earmazenamento de nome e e-mail.
 	
