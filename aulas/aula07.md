@@ -154,9 +154,9 @@ Criando uma politica de AS:
 * Volte no Dashboard, selecione a AS Group onde a politica foi definida
 * Clique em "Actions" => "Edit" na barra superior
 * Edite os valores de Capacity desired/min/max (no exemplo: 2/2/6)
-      * Desired: é o padrão. em condicões normais de operação, mantenha esse valor
-      * Mínimo: o sistema não vai derrubar instancias para menos do que esse valor
-      * Máximo: o sistema não vai criar instancias para mais do que esse valor
+   * Desired: é o padrão. em condicões normais de operação, mantenha esse valor
+   * Mínimo: o sistema não vai derrubar instancias para menos do que esse valor
+   * Máximo: o sistema não vai criar instancias para mais do que esse valor
 
 📌 A politica de auto scaling tanto sobe quanto derruba uma instancia conforme a necessidade. 
 Assim, ela se adapta à dinâmica da operação de maneira que voce tenha uma utilização eficiente de recursos.
