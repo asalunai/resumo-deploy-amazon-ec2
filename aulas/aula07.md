@@ -97,7 +97,38 @@ A seguir, vamos associar o Load Balancer ao grupo do Auto Scaling.
 Se eu criei um grupo que escala as máquinas entre duas subnets A e B, essas máquinas vão estar disponíveis nessas subnets. 
 O Load Balance tem que olhar exatamente para essas redes.
 
-⚠️ Em "1. Configure AS group details", em "Advance details". É importante selecionar "receive from LB" para que, lá no LB esse AS Group apareça como uma opção. se não ele não vai deixar selecionar.
+⚠️ Em "1. Configure AS group details", em "Advance details". 
+É importante selecionar "receive from LB" para que, lá no LB esse AS Group apareça como uma opção. 
+Se não ele não vai deixar selecionar.
 
-⚠️ Em "1. Configure AS group details", em "Advance details", "Target groups": Lembra que falamos durante a criação do LB, na parte "Register Target" que iríamos pular isso já que o LB iria puxar sozinho do AS? É justamente aqui que fazemos essa amarração!
+⚠️ Em "1. Configure AS group details", em "Advance details", "Target groups": 
+Lembra que falamos durante a criação do LB, na parte "Register Target" que iríamos pular isso já que o LB iria puxar sozinho do AS? 
+É justamente aqui que fazemos essa amarração!
+
+## Testando o ambiente de produção
+
+Verificando as instancias criadas:
+
+* No dashboard do Auto Scaling, vá na aba "Instancias"
+* Repare que tem 2 instancias rodando e com o Health Status como "Healthy"
+* Repare que tem uma instancia em cada região (ou seja, se uma região ficar indisponivel, ele cria mais uma maquina na outra)
+* Se voce voltar no dashboard da EC2, voce vai ver que tem 2 instancias sem nome rodando.
+* Voce pode terminar uma das instancias manualmente e ver o que acontece:
+    * voltando lá no AS e ver que o status dela estará como "Unhealthy"
+    * o sistema irá então derrubar essa máquina e criar outra automaticamente
+    * em alguns minutos, voce terá 2 maquinas rodando de novo
+
+Testando a nossa aplicação:
+
+* Vá no dashboard do Load Balance
+* Selecione o LB da aplicação
+* Copie o DNS name
+* Cole esse DNS em uma aba do navegador
+* a página de cadastro deverá carregar
+
+⚠️ Preste atenção na quantidade máxima de instancias rodando ao mesmo tempo para não estourar o Free Tier ou o seu cartão de crédito! 
+
+## Domínio e politicas de Auto Scaling
+
+
 
