@@ -130,5 +130,33 @@ Testando a nossa aplicação:
 
 ## Domínio e politicas de Auto Scaling
 
+### Domínio
 
+Voce pode pegar aquele DNS name e jogar em um domínio. 
+Um exemplo simples é usar o Freenom.
 
+A AWS me disponibiliza o endereço que é do tipo A. 
+No Freenom, para cadastrar o DNS do Load Balance, é necessário escolher a opção CNAME.
+
+### Politicas de Auto Scaling
+
+Exemplo: Sua aplicação é uma pagina de vendas e chegou a Black Friday. 
+Tem duas máquinas funcionando, começou a vir muito tráfego em cima delas, é legal você disponibilizar mais uma. 
+
+Criando uma politica de AS:
+
+* No Dasboard do AS, selecione a sua AS Group
+* Vá na aba "Scaling policies" e clique em "Add Policy"
+* No nosso exemplo, vamos definir uma politica baseada em CPU.
+* Em "metric type": escolha "Average CPU utilization"
+* Em "Target Value", defina 60%
+* Criar!
+* Volte no Dashboard, selecione a AS Group onde a politica foi definida
+* Clique em "Actions" => "Edit" na barra superior
+* Edite os valores de Capacity desired/min/max (no exemplo: 2/2/6)
+      * Desired: é o padrão. em condicões normais de operação, mantenha esse valor
+      * Mínimo: o sistema não vai derrubar instancias para menos do que esse valor
+      * Máximo: o sistema não vai criar instancias para mais do que esse valor
+
+📌 A politica de auto scaling tanto sobe quanto derruba uma instancia conforme a necessidade. 
+Assim, ela se adapta à dinâmica da operação de maneira que voce tenha uma utilização eficiente de recursos.
