@@ -22,6 +22,8 @@ Outra só para o seu administrador de banco de dados. Etc...
 
 Agora vamos configurar o acesso desse usuário lá na CLI:
 
+<https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-creds>
+
 * Volte no terminal do seu computador
 * Execute "aws configure"
 * Ele vai pedir um "AWS Access Key ID" e um "AWS Secret Access Key"
@@ -32,9 +34,12 @@ Agora vamos configurar o acesso desse usuário lá na CLI:
 ## Utilizando a AWS CLI com os serviços EC2
 
 Documentação oficial: 
+
 <https://docs.aws.amazon.com/cli/index.html>
 
-Aqui o instrutar dá exemplos de como visualizar as instancias.
+<https://awscli.amazonaws.com/v2/documentation/api/latest/reference/index.html>
+
+Aqui o instrutor dá exemplos de como visualizar as instancias.
 
 É mais facil ir na documentação e pegar os exemplos.
 
@@ -50,3 +55,5 @@ Aqui o instrutar dá exemplos de como ligar, desligar e terminar as instancias.
 📌 É interessante fazer um script que já automatize todo o processo que fizemos nesse curso. 
 Essa tarefa fica aí pra uma futuro incerto...
 
+Doc Security Group EC2: 
+<https://docs.aws.amazon.com/cli/latest/userguide/cli-services-ec2-sg.html>
