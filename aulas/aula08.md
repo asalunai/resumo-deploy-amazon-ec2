@@ -31,8 +31,22 @@ Agora vamos configurar o acesso desse usuário lá na CLI:
 
 ## Utilizando a AWS CLI com os serviços EC2
 
+Documentação oficial: 
+<https://docs.aws.amazon.com/cli/index.html>
 
+Aqui o instrutar dá exemplos de como visualizar as instancias.
+
+É mais facil ir na documentação e pegar os exemplos.
 
 ## Controlando a instância com a AWS CLI
 
+Aqui o instrutar dá exemplos de como ligar, desligar e terminar as instancias.
+
+É mais facil ir na documentação e pegar os exemplos.
+
+📌 A própria documentação tem alguns exemplos prontos.
+É legal explorar um pouco e ir testando as coisas.
+
+📌 É interessante fazer um script que já automatize todo o processo que fizemos nesse curso. 
+Essa tarefa fica aí pra uma futuro incerto...
 
